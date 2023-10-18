@@ -11,3 +11,7 @@ let y = 'Tic';
 y = 'Tac';
 y = 'Toe';
 console.log(y);
+function hello(){
+return "Hellow world";
+}
+console.log(hello());
