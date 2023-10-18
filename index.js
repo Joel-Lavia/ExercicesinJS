@@ -16,7 +16,8 @@ function hello(){
 return "Hellow world";
 }
 console.log(hello());
-//
+/*deux fonctions. La première fonction a doit renvoyer « Bonjour a ! » 
+et la deuxième fonction b devrait renvoyer « Bonjour b !*/
 function a(){
 return 'Bonjoursa!';
 }
@@ -24,3 +25,8 @@ function b(){
 return'BonjoursB!';
 }
 console.log(`${a()},${b()}`);
+
+function grett(salutation){
+return salutation;
+}
+console.log(grett("Haydo"));
