@@ -11,7 +11,16 @@ let y = 'Tic';
 y = 'Tac';
 y = 'Toe';
 console.log(y);
+//Définissez une fonction hello qui renvoie 'Hello world'
 function hello(){
 return "Hellow world";
 }
 console.log(hello());
+//
+function a(){
+return 'Bonjoursa!';
+}
+function b(){
+return'BonjoursB!';
+}
+console.log(`${a()},${b()}`);
