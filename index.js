@@ -34,6 +34,13 @@ function hello() {
 //Écrivez une fonction echo qui renvoie également le paramètre passé. echo('Greta') devrait renvoyer 'Greta' et echo('CO2') devrait renvoyer 'CO2'
 let x = hello();//renvoie "Hi"
 function echo(parames) {
-  return parames; // renoie "Greeta" et "CO2"
+  return parames; // revoie "Greeta" et "CO2"
 }
+function reply(phrase) {
+  return phrase;
+}
+
+let question = reply('How do you do?');// question = "How do you do?"
+
+
 
