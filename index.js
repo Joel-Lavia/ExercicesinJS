@@ -10,3 +10,4 @@ let abre = "érable";
 let y = 'Tic';
 y = 'Tac';
 y = 'Toe';
+console.log(y);
