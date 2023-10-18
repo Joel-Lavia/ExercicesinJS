@@ -25,8 +25,14 @@ function b(){
 return'BonjoursB!';
 }
 console.log(`${a()},${b()}`);
-
+// La fonction greet renvoyant la valeur 'Haydo!' avec un parametre  salutation variable 
 function grett(salutation){
 return salutation;
 }
 console.log(grett("Haydo"));
+function hello() {
+return 'Hi!';
+  }
+  
+  let saluté = hello();
+  console.log(saluté);
