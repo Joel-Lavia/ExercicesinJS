@@ -61,7 +61,35 @@ function hi(name) {
 let h1 = hi('Selva');
 let h2 = hi('Pola');
 let x4 = h1 + ' ' + h2;
-console.log(x4);
+
+//Partie 2 Conditions
+// let a = 0, b = 1, c = '1';
+// Que vaut (a === 0); //true        
+// Que vaut (a === 1);//false
+// Que vaut (a === b); // false
+// Que vaut (a === 0 && b === 1); //true
+// Que vaut (a === 0 && b === 0); //false
+// Que vaut (a === 0 || b === 0); //true
+// Que vaut (b === c); //false
+// Que vaut (b == c); //true
+// Que vaut (a < b); //false
+// Que vaut (a >= b); //false
+// Que vaut (a !== b); //true
+// Que vaut (a === 0 && (b === 1 || b === 2)) // true
+// Que vaut (a === 0 && true); // true
+function mots(mots,mots2,mots3){
+const concatenation  = `${mots} ${mots2} ${mots3}`;
+console.log(concatenation);
+if(concatenation.length >100){
+  console.log("C'est une grande phrase");
+}
+else{
+  console.log("C'est une petite phrase");
+}
+
+}
+mots("je","veux","dormir");
+
 
 
 
