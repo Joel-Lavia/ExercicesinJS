@@ -39,11 +39,21 @@ function echo(parames) {
 function reply(phrase) {
   return phrase;
 }
+/*Écrivez une fonction greet ayant un paramètre et renvoyant 'Bonjour <paramètre>!'. 
+ Exemple : greet('Ada') devrait renvoyer 'Bonjour Ada !' et greet('Grace') devrait renvoyer 'Bonjour Grace !'.*/
 
 let question = reply('How do you do?');// question = "How do you do?"
  function greeet(name){
-  return `Bonjours ${name}!`;
+  return `Bonjours ${name}!`;// revoie "Bonjours(valeur du parametre)!"
  }
- console.log(greeet("Ada"));
+
+ //Que vaut X 
+
+function whereIs(name) {
+  return 'Where is ' + name + '?';
+}
+
+const x3 = whereIs('Jacky');// x vaut "where is jacky"
+
 
 
