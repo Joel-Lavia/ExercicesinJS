@@ -41,6 +41,9 @@ function reply(phrase) {
 }
 
 let question = reply('How do you do?');// question = "How do you do?"
-
+ function greeet(name){
+  return `Bonjours ${name}!`;
+ }
+ console.log(greeet("Ada"));
 
 
