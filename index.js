@@ -54,6 +54,14 @@ function whereIs(name) {
 }
 
 const x3 = whereIs('Jacky');// x vaut "where is jacky"
+function hi(name) {
+  return 'Hi ' + name + '!';
+}
+
+let h1 = hi('Selva');
+let h2 = hi('Pola');
+let x4 = h1 + ' ' + h2;
+console.log(x4);
 
 
 
