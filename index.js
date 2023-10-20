@@ -94,8 +94,21 @@ Si le nombre myNumber est inférieur au nombre misteryNumber, on affiche +Sinon 
 const misteryNumber = 10;
 const myNumber = 10;
 misteryNumber == myNumber ? console.log("Congratulations") : myNumber<misteryNumber ? console.log("+") : console.log("-");;
-  
+/*Créer une fonction `findLargest()` avec 3 parametre qui seront de type nombre ,
+trouve le plus grand des trois nombres.*/
 function findLargest(nbr1,nbr2,nbr3){
 return Math.max(nbr1,nbr2,nbr3);
 }
-console.log(findLargest(1,2,3));
+ function findTriangleType(side1,side2,side3) {
+  if((side1 == side2 ) && side3 ==(side1&&side2)){
+    console.log("triangle est équilatéral");
+  }
+  else if((side1 !== side2) && side3!==(side1&&side2)){
+    console.log("un triangle est scalène");
+  } 
+ else{
+    console.log("un triangle est isocèle");
+  }
+
+ }
+ findTriangleType(80,10,10);
