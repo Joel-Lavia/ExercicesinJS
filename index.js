@@ -94,3 +94,8 @@ Si le nombre myNumber est inférieur au nombre misteryNumber, on affiche +Sinon 
 const misteryNumber = 10;
 const myNumber = 10;
 misteryNumber == myNumber ? console.log("Congratulations") : myNumber<misteryNumber ? console.log("+") : console.log("-");;
+  
+function findLargest(nbr1,nbr2,nbr3){
+return Math.max(nbr1,nbr2,nbr3);
+}
+console.log(findLargest(1,2,3));
