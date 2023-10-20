@@ -72,24 +72,20 @@ let x4 = h1 + ' ' + h2;
 // Que vaut (a === 0 || b === 0); //true
 // Que vaut (b === c); //false
 // Que vaut (b == c); //true
-// Que vaut (a < b); //false
+// Que vaut (a < b); //true
 // Que vaut (a >= b); //false
 // Que vaut (a !== b); //true
 // Que vaut (a === 0 && (b === 1 || b === 2)) // true
 // Que vaut (a === 0 && true); // true
-function mots(mots,mots2,mots3){
-const concatenation  = `${mots} ${mots2} ${mots3}`;
-console.log(concatenation);
-if(concatenation.length >100){
-  console.log("C'est une grande phrase");
-}
-else{
-  console.log("C'est une petite phrase");
-}
 
+/*Ecrivez une fonction qui prend 3 paramètres (mots).
+Concaténez les trois variables et vérifiez si sa taille est 
+suppérieure à 100 alors affichez "C'est une grande phrase" 
+sinon affichez "C'est une petite phrase".*/
+function sentenceSize(mot1,mot2,mot3){
+  const concatenation = `${mot1} ${mot2} ${mot3}`;
+concatenation.length>100 ? console.log("c'est une grande phrase") : console.log("c'est une petite phrase");
 }
-mots("je","veux","dormir");
-
-
+sentenceSize("je","veux","manger");
 
 
