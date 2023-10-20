@@ -86,6 +86,11 @@ function sentenceSize(mot1,mot2,mot3){
   const concatenation = `${mot1} ${mot2} ${mot3}`;
 concatenation.length>100 ? console.log("c'est une grande phrase") : console.log("c'est une petite phrase");
 }
-sentenceSize("je","veux","manger");
+// sentenceSize("je","veux","manger");
 
-
+/*Déclarer et définir 2 variables misteryNumber et myNumber de type number.
+En utilisant uniquement l'opérateur ternaire, on affiche : Si les 2 nombres sont égaux Congratulations !Sinon
+Si le nombre myNumber est inférieur au nombre misteryNumber, on affiche +Sinon on affiche - */
+const misteryNumber = 10;
+const myNumber = 10;
+misteryNumber == myNumber ? console.log("Congratulations") : myNumber<misteryNumber ? console.log("+") : console.log("-");;
