@@ -113,7 +113,12 @@ return Math.max(nbr1,nbr2,nbr3);
 
  }
  findTriangleType(80,10,10);
-
+ //Create `evalNumbers()` imprime le résultat après avoir évalué les opérations arithmétiques entre deux nombres d'addition, 
+ //de multiplication, de division et de module en JavaScript. Imprimer le résultat de num1+num2 si l'opération est "ajouter"
+ // num1-num2 si l'operation est "substract"
+ //num1 * num2 si l'operation est "multiply"
+ //num1 / num2  si l'operation est "divide"
+ //num1 % num2 si l'operation est "modulus"
  function evalNumbers(operateur, num1, num2){
  if(operateur == "add"){
   console.log(num1 + num2);
@@ -135,3 +140,16 @@ return Math.max(nbr1,nbr2,nbr3);
  }
  }
  evalNumbers("modulus",6,8);
+ 
+ function checkLeapYear(year){
+ if(year%4 == 0 && year % 100 !== 0){
+ console.log("leap year");
+ }
+ else if( year % 400 == 0 ){
+console.log("leap year");
+ }
+ else{
+ console.log("not a leap year");
+ }
+ }
+ //checkLeapYear(1996);
