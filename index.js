@@ -99,6 +99,7 @@ trouve le plus grand des trois nombres.*/
 function findLargest(nbr1,nbr2,nbr3){
 return Math.max(nbr1,nbr2,nbr3);
 }
+//findTriangleType() Vérifier si un triangle est équilatéral, scalène ou isocèle
  function findTriangleType(side1,side2,side3) {
   if((side1 == side2 ) && side3 ==(side1&&side2)){
     console.log("triangle est équilatéral");
@@ -112,3 +113,25 @@ return Math.max(nbr1,nbr2,nbr3);
 
  }
  findTriangleType(80,10,10);
+
+ function evalNumbers(operateur, num1, num2){
+ if(operateur == "add"){
+  console.log(num1 + num2);
+ }
+ else if(operateur == "substract"){
+ console.log(num1 - num2);
+ }
+ else if(operateur == "multiply"){
+  console.log(num1 * num2);
+ }
+ else if(operateur == "divide"){
+  console.log(num1 / num2);
+ }
+ else if(operateur === "modulus"){
+ console.log(num1 % num2);
+ }
+ else{
+ console.log("Invalid operation");
+ }
+ }
+ evalNumbers("modulus",6,8);
