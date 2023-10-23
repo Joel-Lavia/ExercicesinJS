@@ -150,6 +150,28 @@ return Math.max(nbr1,nbr2,nbr3);
  }
  }
  //checkLeapYear(2300);
- function findDaysInMonth(days){
-
+ function findDaysInMonth(years,month){
+ if(month== 0 || month >12){
+  console.log("Invalid month");
  }
+ else if(month==2 && (years%4 === 0 || years % 400 === 0) && years % 100 !== 0 ){
+console.log("29 days");
+ }
+ else if(month == 2 && (years%4 !== 0 && years % 400 !== 0) || years % 100 === 0 ){
+console.log("28 days");
+ }
+ else if(month == 4 || month == 6 || month == 9 || month == 11){
+ console.log("30 days");
+ }
+ else{
+  console.log("31 days");
+ }
+ }
+ findDaysInMonth(2024,12);
+ let i;
+ let v = i;
+ for( i =0; i<=12;i++){
+   v = i;
+ }
+ console.log(v);
+ 
