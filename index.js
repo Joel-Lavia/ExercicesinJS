@@ -140,16 +140,19 @@ return Math.max(nbr1,nbr2,nbr3);
  }
  }
  evalNumbers("modulus",6,8);
- 
+ //Créer une fonction `checkLeapYear()` pour trouver si l'année donnée est une année bissextile
  function checkLeapYear(year){
- if(year%4 == 0 && year % 100 !== 0){
+ if(year%4 == 0 || year % 400 == 0){
  console.log("leap year");
  }
- else if( year % 400 == 0 ){
+ else if( year % 100 !== 0){
 console.log("leap year");
  }
  else{
  console.log("not a leap year");
  }
  }
- //checkLeapYear(1996);
+ checkLeapYear(2023);
+ function findDaysInMonth(days){
+
+ }
