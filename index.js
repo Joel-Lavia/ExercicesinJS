@@ -173,9 +173,15 @@ console.log("28 days");
 Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tableau");;
  }
  checkInput([1,2]);
- //
- function firstElement(arrays){
- const firstElementArrays = arrays.shift();;
+ //Écrivez une fonction JavaScript pour obtenir le premier élément d'un tableau
+ function firstElement(array1){
+ const firstElementArrays = array1.shift();;
  console.log(firstElementArrays);
  }
  //firstElement(["a","b","c"]);
+ //
+ function lastElement(array2){
+ const lastElementArray = array2.pop();
+ console.log(lastElementArray);
+ }
+ lastElement(["a","b","c"]);
