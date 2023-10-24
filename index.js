@@ -170,13 +170,12 @@ console.log("28 days");
  //findDaysInMonth(2024,12);
  //Écrivez une fonction JavaScript pour vérifier si une `entrée` est un tableau ou non.
  function checkInput(input){
-  if(Array.isArray(input)){
- console.log("c'est un tableau");
-  }
-  else{
-    console.log("pas un tableau");
-  }
+Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tableau");;
  }
- //checkInput([1,2]);
- 
- 
+ checkInput([1,2]);
+ //
+ function firstElement(arrays){
+ const firstElementArrays = arrays.shift();;
+ console.log(firstElementArrays);
+ }
+ //firstElement(["a","b","c"]);
