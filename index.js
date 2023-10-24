@@ -179,9 +179,16 @@ Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tab
  console.log(firstElementArrays);
  }
  //firstElement(["a","b","c"]);
- //
+ //Écrivez une fonction JavaScript pour obtenir le dernier  élément d'un tableau
  function lastElement(array2){
  const lastElementArray = array2.pop();
  console.log(lastElementArray);
  }
- lastElement(["a","b","c"]);
+ //lastElement(["a","b","c"]);
+ //Écrivez un programme JavaScript simple pour joindre tous les éléments du tableau 
+ //suivant en une chaîne de caractères.
+ function  joinAllElements(myColor){
+ const joinElements = myColor.join(",");
+ console.log(joinElements);
+ }
+ //joinAllElements(["Red", "Green", "White", "Black"]);
