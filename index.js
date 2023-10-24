@@ -167,11 +167,16 @@ console.log("28 days");
   console.log("31 days");
  }
  }
- findDaysInMonth(2024,12);
- let i;
- let v = i;
- for( i =0; i<=12;i++){
-   v = i;
+ //findDaysInMonth(2024,12);
+ //Écrivez une fonction JavaScript pour vérifier si une `entrée` est un tableau ou non.
+ function checkInput(input){
+  if(Array.isArray(input)){
+ console.log("c'est un tableau");
+  }
+  else{
+    console.log("pas un tableau");
+  }
  }
- console.log(v);
+ //checkInput([1,2]);
+ 
  
