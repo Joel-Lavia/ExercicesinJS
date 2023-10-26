@@ -174,17 +174,22 @@ Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tab
  }
  checkInput([1,2]);
  //Écrivez une fonction JavaScript pour obtenir le premier élément d'un tableau
- function firstElement(array1){
- const firstElementArrays = array1.shift();;
- console.log(firstElementArrays);
+ //le paramètre 'n' renverra les 'n' premiers éléments du tableau.
+ function firstElement(array1,n){
+ for(let i = 0; i<n;i++){
+ console.log(array1[i]);
  }
- //firstElement(["a","b","c"]);
+ }
+ //firstElement(["a","b","c","d"],3);
  //Écrivez une fonction JavaScript pour obtenir le dernier  élément d'un tableau
- function lastElement(array2){
- const lastElementArray = array2.pop();
- console.log(lastElementArray);
+ function lastElement(array2,n1){
+  let stockArray2 = array2.length;
+    for(stockArray2; stockArray2 >= n1;stockArray2--){
+    console.log(array2[stockArray2]);
+    }
+    // console.log(stockArray2);
  }
- //lastElement(["a","b","c"]);
+ lastElement(["a","b","c","d","e"],2);
  //Écrivez un programme JavaScript simple pour joindre tous les éléments du tableau 
  //suivant en une chaîne de caractères.
  function  joinAllElements(myColor){
@@ -192,3 +197,12 @@ Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tab
  console.log(joinElements);
  }
  //joinAllElements(["Red", "Green", "White", "Black"]);
+
+ //Exercice sur les objets
+ var student = {
+  name : "David Rayy",
+  sclass : "VI",
+  rollno : 12};
+  delete student.rollno;
+  var student1 = student;
+  console.log(student1);
