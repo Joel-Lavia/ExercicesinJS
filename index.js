@@ -204,5 +204,17 @@ Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tab
   sclass : "VI",
   rollno : 12};
   delete student.rollno;
-  var student1 = student;
-  console.log(student1);
+  // var student1 = student;
+  // console.log(student1);
+  let attributes = {
+  nom :"joel",
+  caractere :"Flemmard",
+  color :"black",
+  activitePreferer : "jouer au jeux-vidéos",
+  deteste : "trop parler"
+  }
+  attributes.langues = "Espagnole";
+  let attributes1 = attributes;
+  delete attributes.caractere;
+  
+  console.log(attributes1);
