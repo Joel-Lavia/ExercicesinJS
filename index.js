@@ -241,4 +241,19 @@ Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tab
     }
 
   }
+  //Exercice sur les Dom
+
+  //Vous avez des noms de différents fruits et un élément html de liste non ordonnée; 
+  //ajoutez un élément de liste pour chacun à la liste non ordonnée dans la page.
+ const list = document.querySelector("ul");
+ const fruitLis = ["pomme", "banane", "tomate"];
+ for(let i = 0; i<fruitLis.length; i++){
+ const fruits = fruitLis[i];
+ const elements = document.createElement("li");
+ console.log(elements);
+elements.innerText = fruitLis[i];
+list.appendChild(elements);
+ }
+
+
 
