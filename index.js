@@ -248,12 +248,18 @@ Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tab
  const list = document.querySelector("ul");
  const fruitLis = ["pomme", "banane", "tomate"];
  for(let i = 0; i<fruitLis.length; i++){
- const fruits = fruitLis[i];
+  
+ const fruits = fruitLis[i]
  const elements = document.createElement("li");
  console.log(elements);
 elements.innerText = fruitLis[i];
 list.appendChild(elements);
  }
+ //Ajoutez le logo CroCoder (élément image) en tant qu'enfant de l'élément div existant.
+ const logo = document.querySelector("div");
+ const imageLogo = document.createElement("img")
+ imageLogo.src = "https://crocoder.dev/icon.png";
+ logo.appendChild(imageLogo)
 
 
 
