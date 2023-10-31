@@ -176,20 +176,20 @@ Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tab
  //Écrivez une fonction JavaScript pour obtenir le premier élément d'un tableau
  //le paramètre 'n' renverra les 'n' premiers éléments du tableau.
  function firstElement(array1,n){
- for(let i = 0; i<n;i++){
- console.log(array1[i]);
+ for(let i = 4; i>=n;i--){
+ console.log();
  }
  }
- //firstElement(["a","b","c","d"],3);
- //Écrivez une fonction JavaScript pour obtenir le dernier  élément d'un tableau
+//  firstElement(["a","b","c","d"],3);
+ //Écrivez une fonction JavaScript pour obtenir le n dernier  élément d'un tableau
  function lastElement(array2,n1){
-  let stockArray2 = array2.length;
-    for(stockArray2; stockArray2 >= n1;stockArray2--){
-    console.log(array2[stockArray2]);
+  let tableStorage = array2.length-1;
+  const exitLength =  array2.length - n1
+    for(tableStorage; tableStorage >= exitLength; tableStorage--){
+      console.log(array2[tableStorage]);
     }
-    // console.log(stockArray2);
  }
- lastElement(["a","b","c","d","e"],2);
+ lastElement(["a","b","c","d","e"],3);
  //Écrivez un programme JavaScript simple pour joindre tous les éléments du tableau 
  //suivant en une chaîne de caractères.
  function  joinAllElements(myColor){
@@ -216,5 +216,29 @@ Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tab
   attributes.langues = "Espagnole";
   let attributes1 = attributes;
   delete attributes.caractere;
-  
-  console.log(attributes1);
+  //console.log(attributes1);
+
+  const books = [
+    {
+    title :"Le Hobbit",
+    auteur :"J.R.R. Tolkien",
+    isRead: true
+    },
+    {
+    title :"Le Seigneur des Anneaux",
+    author : "J.R.R. Tolkien",
+    isRead: false
+  }
+  ]
+  for(let i = 0;i<books.length;i++){
+   if(books[i].isRead)
+   {
+   console.log(`Vous avez déjà lu ${books[i].title}`);
+   }
+  else
+    {
+   console.log(`Vous devez encore lire ${books[i].title}`);
+    }
+
+  }
+
