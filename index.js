@@ -283,7 +283,7 @@ list[5].innerText = "Larst";
   conteneur3.style.backgroundColor = "red";
  // boucle pour parcourire les nombres de 100 à 100
 for(let i =0; i<=100; i++){
-  console.log(i);
+
   let conteur = i.toString();
   let paires = document.createElement("p");
 
@@ -309,9 +309,20 @@ const paragraphe = document.querySelector("#text");
 boutton.addEventListener("click",function(){
 paragraphe.style.color = "red";
 paragraphe.style.fontSize = "100px";
-paragraphe.style.fontFamily ="Helvetica";
+paragraphe.style.fontFamily ="Comic sans MS";
 
 });
+function namPrenom(){
+const nomPrenom = document.querySelectorAll('input[type = "text"]');
+for(let i = 0; i<nomPrenom.length;i++){
+let nom = nomPrenom[i];
+let se = nom.value;
+}
+}
+function getFormvalue(){
+// alert(namPrenom());
+}
+namPrenom();
 
 
 
