@@ -315,8 +315,9 @@ paragraphe.style.fontFamily ="Comic sans MS";
 function namPrenom(){
 const nomPrenom = document.querySelectorAll('input[type = "text"]');
 for(let i = 0; i<nomPrenom.length;i++){
-let nom = nomPrenom[i];
-let se = nom.value;
+const nom = nomPrenom[i];
+const se = nom.value;
+console.log(se);
 }
 }
 function getFormvalue(){
