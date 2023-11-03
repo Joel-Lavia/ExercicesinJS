@@ -245,21 +245,73 @@ Array.isArray(input) ? console.log("c'est un tableau") : console.log("pas un tab
 
   //Vous avez des noms de différents fruits et un élément html de liste non ordonnée; 
   //ajoutez un élément de liste pour chacun à la liste non ordonnée dans la page.
- const list = document.querySelector("ul");
- const fruitLis = ["pomme", "banane", "tomate"];
- for(let i = 0; i<fruitLis.length; i++){
+ const list = document.querySelectorAll(".orderList");
+list[0].innerText = "First";
+list[1].innerText = "Last";
+list[2].innerText = "First";
+list[3].innerText = "Last";
+list[4].innerText = "First";
+list[5].innerText = "Larst";
+
+//  const fruitLis = ["pomme", "banane", "tomate"];
+//  for(let i = 0; i<fruitLis.length; i++){
   
- const fruits = fruitLis[i]
- const elements = document.createElement("li");
- console.log(elements);
-elements.innerText = fruitLis[i];
-list.appendChild(elements);
- }
+//  const fruits = fruitLis[i]
+//  const elements = document.createElement("li");
+//  console.log(elements);
+// elements.innerText = fruitLis[i];
+// list.appendChild(elements);
+//  }
  //Ajoutez le logo CroCoder (élément image) en tant qu'enfant de l'élément div existant.
- const logo = document.querySelector("div");
- const imageLogo = document.createElement("img")
+ const logo = document.querySelector("#image");
+ const imageLogo = document.createElement("img");
  imageLogo.src = "https://crocoder.dev/icon.png";
- logo.appendChild(imageLogo)
+ logo.appendChild(imageLogo);
+
+  const nombres = document.querySelector("#nombre"); // cible  la grande div
+  //création des 3 div enfants
+  const conteneur1 = document.createElement("div");
+  const conteneur2 = document.createElement("div");
+  const conteneur3 = document.createElement("div");
+  //application du style css pour determiner la longeur de 3 div
+  conteneur1.style.width = "120px";
+  conteneur2.style.width = "120px";
+  conteneur3.style.width = "120px";
+  //application du backgroundColor sur le 3 div
+  conteneur1.style.backgroundColor = "green";
+  conteneur2.style.backgroundColor = "yellow";
+  conteneur3.style.backgroundColor = "red";
+ // boucle pour parcourire les nombres de 100 à 100
+for(let i =0; i<=100; i++){
+  console.log(i);
+  let conteur = i.toString();
+  let paires = document.createElement("p");
+
+  if(i % 2 === 0){
+  paires.innerText = conteur;
+  conteneur1.appendChild(paires);
+  nombres.appendChild(conteneur1);
+}
+else if(i % 3 === 0  ){
+paires.innerText = conteur;
+conteneur2.appendChild(paires);
+nombres.appendChild(conteneur2);
+}
+else if((i % i === 0 && i % 1 === 0) || i % 2 !== 0){
+paires.innerText = conteur;
+conteneur3.appendChild(paires);
+nombres.appendChild(conteneur3);
+}
+}
+
+const boutton = document.querySelector("#jsstyle");
+const paragraphe = document.querySelector("#text");
+boutton.addEventListener("click",function(){
+paragraphe.style.color = "red";
+paragraphe.style.fontSize = "100px";
+paragraphe.style.fontFamily ="Helvetica";
+
+});
 
 
 
