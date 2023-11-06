@@ -313,17 +313,16 @@ paragraphe.style.fontFamily ="Comic sans MS";
 
 });
 
-// function namPrenom(){
-// const nomPrenom = document.querySelectorAll('input[type = "text"]');
-// for(let i = 0; i<nomPrenom.length;i++){
-// const nom = nomPrenom[i];
-// const se = nom.value;
-// console.log(se);
-// }
-// }
-// function getFormvalue(){
-// // alert(namPrenom());
-// }
+
+function getFormvalue(){
+  const nomPrenom = document.querySelectorAll('input[type = "text"]');
+  for(let i = 0; i<nomPrenom.length;i++){
+  const nom = nomPrenom[i];
+  const nomAndPrenom = nom.value;
+  alert(nomAndPrenom);
+}
+}
+
 // namPrenom();
 
 //cibler le boutton 
@@ -331,18 +330,22 @@ const buttonattributs = document.querySelector("#btnforattributes");
 const differentAttributs = document.querySelector("#w3r");
 // console.log(differentAttributs); 
 // console.log(buttonattributs);
+
 function obtainAttributes(){
-  buttonattributs.addEventListener("click",function(){
+ 
     const attribut1 = differentAttributs.getAttribute("rel");
     const attribut2 = differentAttributs.getAttribute("target");
     const attribut3 = differentAttributs.getAttribute("href");
     const attribut4 = differentAttributs.getAttribute("type");
     const allAttributes = `${attribut1} ,${attribut2} ,${attribut3}, ${attribut4}`;
     alert(allAttributes)
-    // console.log(allAttributes);
-    });
+   
 }
-obtainAttributes();
+buttonattributs.addEventListener("click",function(){
+  obtainAttributes();
+});
+
+
 
 
 
